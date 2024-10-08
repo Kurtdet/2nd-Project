@@ -18,28 +18,26 @@ Copy and paste the following code into the file:
 
 solidity
 Copy code
-// SPDX-License-Identifier: MIT
 
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
 contract MyToken {
     string public tokenName = "META";
     string public tokenAbbrv = "MTA";
     uint public totalSupply = 0;
-
     mapping(address => uint) public balances;
-
     function mint (address _address, uint _value) public {
         totalSupply += _value;
         balances[_address] += _value;
     }
-    
     function burn (address _address, uint _value) public {
         require(balances[_address] >= _value, "Insufficient balance to burn.");
         totalSupply -= _value;
         balances[_address] -= _value;
     }
 }
+
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile MyToken.sol" button.
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
