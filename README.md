@@ -1,9 +1,13 @@
 MyToken
+
 Description
+
 This Solidity contract, MyToken, is a simple implementation of an ERC-like token that allows for the minting and burning of tokens. The contract includes essential functionalities such as managing the token name, abbreviation, total supply, and user balances. This project serves as an introductory example for those looking to understand the basics of token creation and management on the Ethereum blockchain.
 
 Getting Started
+
 Executing the Program
+
 To run this contract, you can use Remix, an online Solidity IDE. Follow the steps below to get started:
 
 Go to the Remix website at https://remix.ethereum.org/.
